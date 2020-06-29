@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" />
+    <title>Welcome to my site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script
+      src="https://kit.fontawesome.com/25e7994be8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+    <script src="wow.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+    />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"
+          ><img src="img/logo.png" /> pmentzdev</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--- Welcome Section Jumbotron-->
+    <div id="home" class="jumbotron jumbotron-fluid text-center padding">
+      <div class="container">
+        <h1 class="type"></h1>
+        <script src="typed.js"></script>
+        <script>
+          var typed3 = new Typed(".type", {
+            strings: [
+              "Hello World",
+              "My name is <strong>Panagiotis Mentzelopoulos</strong>",
+              "I am a Software Engineer based in Dublin",
+            ],
+            showCursor: false,
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true,
+          });
+        </script>
+
+        <a href="#aboutme">
+          <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!--- About Me Section -->
+    <div id="aboutme" class="container-fluid padding wow bounceInLeft delay-1s">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">About Me</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            <br />
+            Computer Science graduate with experience in software design and
+            application development. Highly-technical, self-motivated individual
+            with a proven ability to learn quickly. Good analytical power and
+            comprehensive problem solving abilities. Strong work ethic and
+            eagerness to learn new technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--- Languages Progress Bar Section -->
+    <div class="container padding wow bounceInRight delay-1.5s">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mt-5 bg-dark">
+            <div class="card-body">
+              <h3 class="card-title text-center text-white">My Skills</h3>
+              <div class="skill">
+                <b class="text-white">HTML</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="90%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">CSS</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="90%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">JavaScript</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="80%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">React</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="80%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">Node.js</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="70%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">Python</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill">
+                <b class="text-white">SQL</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="60%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill">
+                <b class="text-white">NoSQL</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill">
+                <b class="text-white">Java</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="40%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <b class="text-white">C</b>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-progress="40%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Projects Section -->
+    <div id="projects" class="container-fluid padding wow slideInUp delay-1s">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Projects</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid text-center padding wow slideInLeft delay-1s">
+      <div class="row padding">
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="img/savings.svg" />
+            <div class="card-body">
+              <h4 class="card-title">Expense Tracker</h4>
+              <p class="card-text">
+                A fullstack web application to track your income and expenses,
+                built with the MERN stack. The back-end is written in
+                Node.js/Express, a remote noSQL database sits on MongoDB Atlas
+                and the front-end is written in ReactJS with the use of
+                React-Hooks. You can find more information on
+                <a
+                  href="https://github.com/Panosmentz/MERN-Expenses-App"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
+              <a
+                href="https://guarded-wildwood-06153.herokuapp.com/"
+                target="_blank"
+                class="btn btn-outline-secondary"
+                >View APP</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="img/recipe.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Recipe Finder APP</h4>
+              <p class="card-text">
+                A recipe finder application. Simply search for an ingredient and
+                a list of recipes will be presented to you. The application
+                displays all ingredients needed, calories and nutrients. The app
+                is using the edamam web API and was developed with HTML5, CSS3
+                and ReactJS.
+              </p>
+              <a
+                href="https://nifty-davinci-b034e9.netlify.app/"
+                target="_blank"
+                class="btn btn-outline-secondary"
+                >View APP</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              id="weather-img"
+              class="card-img-top"
+              src="img/weather-icon.png"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Weather APP</h4>
+              <p class="card-text">
+                A weather forecast application using the DarkSky Web API. The
+                App prompts you to allow your location and gives you the current
+                and an hour-by-hour forecast based on your longitude and
+                latitude. This was made with HTML5, CSS3, Bootstrap and Vanilla
+                JavaScript.
+              </p>
+              <a
+                href="https://musing-kalam-1029f1.netlify.app/"
+                target="_blank"
+                class="btn btn-outline-secondary"
+                >View APP</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img class="card-img-top" src="img/auction.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Auctions Project</h4>
+              <p class="card-text">
+                This is a Java application that allows users to create and edit
+                auctions as well as place bids. This application features User
+                Authentication with credentials stored in the mySQL database, an
+                administrator account with an admin console and more. Click on
+                View Demo for more details.
+              </p>
+              <a
+                href="https://youtu.be/mrgYUsr4rBY"
+                target="_blank"
+                class="btn btn-outline-secondary"
+                >View Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--- Contact Me Section -->
+
+    <div id="contact" class="container padding wow slideInUp delay-1s">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 m-auto">
+          <h1 class="contact-section display-4 text-center">Contact Me</h1>
+          <hr />
+          <div class="contact-form">
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style="display: none;"
+              onload="if(submitted) { alert('Thank you for contacting me, I will get back to you as soon as possible.'); window.location='#';}"
+            ></iframe>
+            <form
+              class="needs-validation"
+              novalidate
+              id="gform"
+              method="POST"
+              action="https://docs.google.com/forms/
+					u/0/d/e/1FAIpQLSdSD5dOMyrs3nB49jPjYcK_mUNUDXfvz9C4865K5CUv-6AFxw/formResponse"
+              target="hidden_iframe"
+              onsubmit="submitted=true;"
+            >
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group" name="First Name">
+                    <label for="inputFirstName">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputFirstName"
+                      required
+                      name="entry.2020636376"
+                    />
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please enter a valid name. This field is required
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputLastName" name="Last Name"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputLastName"
+                      required
+                      name="entry.378021031"
+                    />
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please enter a valid name. This field is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" name="E-mail">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  required
+                  name="entry.545017847"
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid e-mail address. This field is required
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputMessage" name="Message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  rows="5"
+                  required
+                  placeholder="Please type your message"
+                  name="entry.148645839"
+                ></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+              </div>
+              <div class="button-area text-center">
+                <button
+                  type="submit"
+                  class="btn btn-outline-secondary text-center"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Social Icons-->
+    <div class="container-fluid padding wow slideInRight delay-0.5s">
+      <div class="row text-center padding">
+        <div class="s-m">
+          <a
+            href="https://www.linkedin.com/in/panagiotis-mentz/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Panosmentz" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.facebook.com/panos.mentz/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/panos_mentz/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--- Footer -->
+    <footer class="container-fluid bg-dark text-center text-white padding">
+      <div class="footer-text">
+        <p>© 2020 Panagiotis Mentzelopoulos</p>
+      </div>
+    </footer>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

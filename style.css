@@ -1,0 +1,200 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Code Pro", monospace;
+  color: #222;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+.container {
+  height: auto;
+}
+.navbar {
+  padding: 0.35rem;
+  top: 0;
+  opacity: 0.8;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.jumbotron {
+  color: black;
+  background-image: url(img/dublin22.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.jumbotron h1 {
+  margin-top: 100px;
+}
+.box span {
+  position: absolute;
+  top: 85%;
+  right: 50%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.padding {
+  padding-top: 5rem;
+}
+
+hr {
+  border: 3px solid #343a40;
+  width: 50%;
+  margin-top: 0.3rem;
+}
+.card {
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.btn-outline,
+.btn-outline-secondary {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-outline:hover,
+.btn-outline-secondary:hover {
+  background: #e67e22;
+}
+
+.learn-more-button {
+  margin-top: 50%;
+}
+
+.progress .progress-bar {
+  width: 0;
+  transition: all ease 2s;
+  background-color: #e67e22;
+}
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+#weather-img {
+  object-fit: scale-down;
+}
+.contact-form {
+  margin: 100px 0;
+}
+
+.contact-form h1 {
+  margin: 0 0 50px;
+}
+
+.contact-form label {
+  opacity: 0.9;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.hint-text {
+  font-size: 15px;
+  padding-bottom: 15px;
+  opacity: 0.8;
+}
+
+.s-m {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 0 100px;
+}
+
+.s-m a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #343a40;
+  color: white;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 22px;
+  text-decoration: none;
+}
+.s-m a:hover {
+  background: #e67e22;
+}
+.s-m a i {
+  transition: 0.4s all;
+}
+.s-m a:hover > i {
+  transform: scale(1.6) rotate(25deg);
+}
+
+.footer-text {
+  bottom: 0px;
+  height: 40px;
+  right: 0px;
+  left: 0px;
+}
+
+.gotopbtn {
+  display: inline-block;
+  background-color: #343a40;
+  justify-content: center;
+  font-size: 22px;
+  position: absolute;
+  right: 5%;
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+.gotopbtn:hover {
+  color: #e67e22;
+}
