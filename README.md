@@ -3,7 +3,6 @@
 
 ## Table of contents
 * [Technologies](#technologies)
-* [Status](#status)
 * [Live-Site](#live-site)
 * [Contact](#contact)
 
@@ -17,9 +16,6 @@
 * Google Forms
 * Animate.css 
 * wow-js
-
-## Status
-Project is: _Completed_
 
 ## Live-Site
 [Live Site](https://determined-saha-b25d49.netlify.app/)
